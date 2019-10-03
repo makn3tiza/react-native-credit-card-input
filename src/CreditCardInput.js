@@ -180,10 +180,10 @@ export default class CreditCardInput extends Component {
               keyboardType="numeric"
               containerStyle={[s.inputContainer, inputContainerStyle, { width: CVC_INPUT_WIDTH }]} /> }
               </View>
-//           {requiresPostalCode &&
-//             <CCInput {...this._inputProps("postalCode")}
-//               keyboardType="numeric"
-//               containerStyle={[s.inputContainer, inputContainerStyle, { width: POSTAL_CODE_INPUT_WIDTH }]} />}
+{requiresPostalCode &&
+  <CCInput {...this._inputProps("postalCode")}
+               keyboardType="numeric"
+               containerStyle={[s.inputContainer, inputContainerStyle, { width: POSTAL_CODE_INPUT_WIDTH }]} />}
         </ScrollView>
       </View>
     );

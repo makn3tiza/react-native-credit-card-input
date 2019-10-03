@@ -76,10 +76,10 @@ export default class CCInput extends Component {
         activeOpacity={0.99}>
         <View style={[containerStyle]}>
           { !!label && <Text style={[labelStyle]}>{label}</Text>}
-          <TextInput ref="input"
+          <TextInput
             {...additionalInputProps}
             keyboardType={keyboardType}
-            autoCapitalise="words"
+            autoCapitalise="characters"
             autoCorrect={false}
             style={[
               s.baseInputStyle,

@@ -123,7 +123,7 @@ export default class CardView extends Component {
       { scale },
       { translateY: ((BASE_SIZE.height * (scale - 1) / 2)) },
     ] };
-
+    console.log(Icons[brand]);
     return (
       <View style={[s.cardContainer, containerSize]}>
         <FlipCard style={{ borderWidth: 0 }}

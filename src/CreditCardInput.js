@@ -21,6 +21,7 @@ const s = StyleSheet.create({
   },
   form: {
     marginTop: 20,
+    flex:1
   },
   inputContainer: {
     marginLeft: 20,
@@ -161,9 +162,7 @@ export default class CreditCardInput extends Component {
           expiry={expiry}
           cvc={cvc} />
         <ScrollView ref="Form"
-          keyboardShouldPersistTaps="always"
-          scrollEnabled={allowScroll}
-          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={{flexGlow:1}}
           style={s.form}>
        { requiresName &&
             <CCInput {...this._inputProps("name")}
